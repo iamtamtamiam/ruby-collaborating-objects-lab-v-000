@@ -12,7 +12,7 @@ class MP3Importer
  end 
  
  def import
-   self.files.each do |file|  #why self?
+   self.files.each do |file|  #why self? why not @files? 
      Song.new_by_filename(file)
     end 
  end 
